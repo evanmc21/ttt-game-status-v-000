@@ -43,9 +43,13 @@ def draw?(board)
 end
 
 def over?(board)
-  !won?(board) && full?(board)
+  !won?(board)
 end
 
 def winner?(board)
-  !won?(board) && full?(board)
+  if !won?(board)
+    return nil 
+  elsif !full?(board)
+    return "X" || "O"
+  end
 end
