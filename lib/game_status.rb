@@ -50,7 +50,6 @@ def winner(board)
   if !won?(board)
     return nil
   elsif !full(board)
-    return nil
   end
   board[won?(board)[0]]
 end
