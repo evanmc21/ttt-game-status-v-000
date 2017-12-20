@@ -39,5 +39,5 @@ board.none?{|index| index == "" || index == " " || index == nil}
 end
 
 def draw?(board)
-
+!= won?(board) && full?(board)
 end
