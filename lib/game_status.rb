@@ -38,6 +38,6 @@ def full?(board)
 board.none?{|index| index == "" || index == " " || index == nil}
 end
 
-def draw?
+def draw?(board)
   
 end
