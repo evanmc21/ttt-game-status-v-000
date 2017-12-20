@@ -45,7 +45,6 @@ end
 def over?(board)
   !won?(board) && full?(board) && draw?(board)
   true
-else return false
 end
 
 def winner(board)
